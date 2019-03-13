@@ -1,0 +1,8 @@
+.idea/
+.vscode/
+
+# input and generated data
+input.mp4
+vsmp/frames.h
+frames/*.jpg
+frames/*.gif
