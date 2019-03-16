@@ -14,15 +14,18 @@ ORDERED_DITHER?=h6x6a
 DURATION?=00:06:00
 FPS?=1
 
-all: $(FRAMES_JPEG:%.jpg=%.gif)
+all: $(FRAMES_JPEG:%.jpg=%.dat)
 
 %.gif: %.jpg
 	convert $< -ordered-dither ${ORDERED_DITHER} -colors 2 -monochrome $@
+
+%.dat: %.gif
+	python convert.py $< $@
 
 frames:
 	ffmpeg -i input.mp4 -t ${DURATION} -vf scale=-2:400,crop=640:384,fps=${FPS} frames/%03d.jpg
 
 clean:
-	rm -f $(FRAMES_JPEG) $(FRAMES_JPEG:%.jpg=%.gif)
+	rm -f $(FRAMES_JPEG) $(FRAMES_JPEG:%.jpg=%.gif) $(FRAMES_JPEG:%.jpg=%.dat)
 
 .PHONY: frames
