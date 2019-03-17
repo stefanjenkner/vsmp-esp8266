@@ -9,3 +9,4 @@ vsmp/frames.h
 frames/*.jpg
 frames/*.gif
 frames/*.dat
+vsmp/data/*.dat
