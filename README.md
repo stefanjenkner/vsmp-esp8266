@@ -4,6 +4,8 @@ This project is about building an e-Ink/e-Paper movie player.
 Instead of showing 24 frames per seconds, it will be one frame per hour (or 24 frames per day) only.
 It was inspired by [VSMP](vsmp) from Bryan Boyer.
 
+[![Known Vulnerabilities](https://snyk.io/test/github/stefanjenkner/vsmp-esp8266/badge.svg)](https://snyk.io/test/github/stefanjenkner/vsmp-esp8266)
+
 The challenge: battery powered (no cables)
 
 Components used:
