@@ -1,2 +1,2 @@
-bitarray==1.1.0
-Pillow==6.2.3
+bitarray==2.4.0
+Pillow==8.4.0
