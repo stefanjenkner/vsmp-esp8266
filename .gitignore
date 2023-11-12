@@ -3,8 +3,11 @@
 
 /venv/
 
-# input and generated data
+# input
 input.mp4
+subtitle.srt
+
+# generated data
 vsmp/frames.h
 frames/*.jpg
 frames/*.gif

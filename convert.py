@@ -5,7 +5,6 @@ import argparse
 from bitarray import bitarray
 from PIL import Image
 
-
 def convert(src, dst):
     treshhold=128
     with Image.open(src) as img:
@@ -23,7 +22,7 @@ def convert(src, dst):
             out.flush()
 
 def main():
-    parser = argparse.ArgumentParser(description='Abc')
+    parser = argparse.ArgumentParser(description='convert')
     parser.add_argument('src')
     parser.add_argument('dst')
     args = parser.parse_args()
