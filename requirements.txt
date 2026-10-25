@@ -1,2 +1,2 @@
 bitarray==2.4.0
-Pillow==10.3.0
+Pillow==13.0.0
